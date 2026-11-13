@@ -68,3 +68,9 @@ Copy `skills/fusion-manage-live-viewer/` to `~/.claude/skills/` so Claude knows 
 ```bash
 npm test        # unit and integration tests (stub APS and Fusion Manage, simulated browser tab)
 ```
+
+## License
+
+[MIT](LICENSE). You may use, modify and redistribute this code, including as part of a paid product or service, as long as the copyright notice is kept.
+
+The license covers the code in this repository only. The APS Viewer and the Fusion Manage and APS APIs are Autodesk services used under Autodesk's own terms, with your own APS app, and the license grants no right to use Autodesk names or logos.

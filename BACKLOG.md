@@ -57,6 +57,6 @@ Fixed during live verification: Git Bash rewrote `/api/v3/…` arguments into Wi
 - [x] High-level `fmv fm` operations, `fmv view state`, restructured skill with references (see the decisions log)
 - [x] Packaged as a Claude Code plugin (`.claude-plugin/`, `skills/fusion-manage-live-viewer/`)
 - [x] Example IDs in docs and tests made generic; tenant-specific eval cases kept out of the repo
-- [ ] Choose a license (currently UNLICENSED, so others may not legally reuse the code yet)
+- [x] MIT license, copyright Autodesk, Inc. (2026-11-13)
 - [ ] Generic eval cases that run against any tenant
 - [ ] Trigger test for the skill description (the automated loop gave no signal on Claude Code 2.1.323)

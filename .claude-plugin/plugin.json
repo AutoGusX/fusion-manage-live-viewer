@@ -2,8 +2,17 @@
   "name": "fusion-manage-live-viewer",
   "version": "0.2.0",
   "description": "Drive Autodesk Fusion Manage and a local 3D viewer from Claude Code: load models, highlight parts, show BOMs and records, and create or edit PLM records through the fmv CLI.",
-  "author": { "name": "AutoGusX", "url": "https://github.com/AutoGusX" },
+  "author": {
+    "name": "AutoGusX",
+    "url": "https://github.com/AutoGusX"
+  },
   "homepage": "https://github.com/AutoGusX/fusion-manage-live-viewer",
   "repository": "https://github.com/AutoGusX/fusion-manage-live-viewer",
-  "keywords": ["fusion-manage", "plm", "aps-viewer", "autodesk"]
+  "keywords": [
+    "fusion-manage",
+    "plm",
+    "aps-viewer",
+    "autodesk"
+  ],
+  "license": "MIT"
 }

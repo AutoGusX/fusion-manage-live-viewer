@@ -21,8 +21,9 @@
     "ui/",
     "skills/",
     "INSTALL.md",
-    ".env.example"
+    ".env.example",
+    "LICENSE"
   ],
-  "license": "UNLICENSED",
+  "license": "MIT",
   "private": true
 }
