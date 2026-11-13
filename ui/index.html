@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fusion Manage live viewer</title>
+    <link rel="icon" href="/ui/favicon.svg" type="image/svg+xml" />
+    <script src="/ui/theme-boot.js"></script>
+    <link rel="stylesheet" href="/ui/styles.css" />
+    <script type="module" src="/ui/app.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <img src="/ui/favicon.svg" alt="" width="20" height="20" />
+        <span class="brand-name">Fusion Manage live viewer</span>
+      </div>
+      <div class="model-label" id="model-label" title="">No model loaded</div>
+      <div class="topbar-right">
+        <span class="chip" id="chip-tenant" title="Fusion Manage tenant">—</span>
+        <span class="chip" id="chip-connection" data-tone="warn"><span class="dot" aria-hidden="true">◐</span><span class="chip-text">Connecting…</span></span>
+        <span class="chip" id="chip-auth" data-tone="warn"><span class="dot" aria-hidden="true">◇</span><span class="chip-text">Not signed in</span></span>
+        <button class="btn" id="btn-signin" hidden>Sign in</button>
+        <button class="btn icon" id="btn-dock" title="Show or hide panels" aria-label="Show or hide panels" aria-pressed="true">▥</button>
+        <button class="btn icon" id="btn-theme" title="Switch light or dark" aria-label="Switch light or dark">◑</button>
+      </div>
+    </header>
+
+    <div class="banner" id="banner" hidden role="status"></div>
+
+    <main class="layout" id="layout">
+      <section class="stage" aria-label="3D viewer">
+        <div id="viewer" class="viewer-host"></div>
+        <div class="empty" id="empty">
+          <div class="empty-title">Waiting for Claude Code</div>
+          <div class="empty-body">Ask Claude to show a Fusion Manage item here, or run<br /><code>fmv view load --ws &lt;workspace&gt; --item &lt;item&gt;</code></div>
+        </div>
+        <div class="progress" id="progress" hidden role="status"><span class="spinner" aria-hidden="true"></span><span id="progress-text"></span></div>
+        <div class="legend" id="legend" hidden aria-label="Colour legend"></div>
+      </section>
+
+      <div class="splitter" id="splitter" role="separator" aria-orientation="vertical" aria-label="Resize panels" tabindex="0"></div>
+
+      <aside class="dock" id="dock" aria-label="Panels">
+        <nav class="tabs" role="tablist">
+          <button role="tab" data-tab="bom" aria-selected="false">BOM</button>
+          <button role="tab" data-tab="table" aria-selected="false">Table</button>
+          <button role="tab" data-tab="markdown" aria-selected="false">Notes</button>
+          <button role="tab" data-tab="card" aria-selected="false">Record</button>
+          <button role="tab" data-tab="activity" aria-selected="true">Activity</button>
+        </nav>
+        <section class="panel" data-panel="bom" role="tabpanel" hidden></section>
+        <section class="panel" data-panel="table" role="tabpanel" hidden></section>
+        <section class="panel" data-panel="markdown" role="tabpanel" hidden></section>
+        <section class="panel" data-panel="card" role="tabpanel" hidden></section>
+        <section class="panel" data-panel="activity" role="tabpanel"></section>
+      </aside>
+    </main>
+  </body>
+</html>

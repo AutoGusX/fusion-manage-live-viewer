@@ -1,0 +1,11 @@
+{
+  "name": "fusion-manage-live-viewer",
+  "owner": { "name": "AutoGusX", "url": "https://github.com/AutoGusX" },
+  "plugins": [
+    {
+      "name": "fusion-manage-live-viewer",
+      "source": "./",
+      "description": "Drive Autodesk Fusion Manage and a local 3D viewer from Claude Code through the fmv CLI."
+    }
+  ]
+}

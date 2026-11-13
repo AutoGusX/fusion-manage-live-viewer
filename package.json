@@ -1,0 +1,28 @@
+{
+  "name": "fusion-manage-live-viewer",
+  "version": "0.2.0",
+  "description": "Local 3D viewer and feedback panels that Claude Code drives while it works in Fusion Manage",
+  "type": "module",
+  "bin": {
+    "fmv": "bin/fmv.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node bin/fmv.js start",
+    "test": "node --test test/*.test.js",
+    "check": "node --check bin/fmv.js && node --test test/*.test.js"
+  },
+  "files": [
+    ".claude-plugin/",
+    "bin/",
+    "src/",
+    "ui/",
+    "skills/",
+    "INSTALL.md",
+    ".env.example"
+  ],
+  "license": "UNLICENSED",
+  "private": true
+}

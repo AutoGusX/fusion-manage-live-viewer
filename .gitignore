@@ -1,0 +1,14 @@
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+.env*
+!.env.example
+session.json
+secret
+*.log
+skill-workspace/
+/*.png
+/*.json
+!/package.json
